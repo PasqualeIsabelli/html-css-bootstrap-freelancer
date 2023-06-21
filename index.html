@@ -3,21 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bootstrap Freelancer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-md">
+        <a class="navbar-brand" href="#"><strong>START BOOTSTRAP</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"><strong>PORTFOLIO</strong></a>
+            <a class="nav-link" href="#"><strong>ABOUT</strong></a>
+            <a class="nav-link" href="#"><strong>CONTACT</strong></a>
+          </div>
+        </div>
+      </div>
     </nav>
+
+    <!-- Navbar fatta a mano -->
+    <!-- <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <a class="logo" href="#"><strong>START BOOTSTRAP</strong></a>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><strong>PORTFOLIO</strong></li>
+              <li><strong>ABOUT</strong></li>
+              <li><strong>CONTACT</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <section class="hero">
+      <div class="container text-center hero-center">
+        <div class="row">
+          <div class="col-12">
+            <div class="jumbo">
+              <img src="img/avatar.svg" alt="jumbo-image">
+              <h1><strong>START BOOTSTRAP</strong></h1>
+              <p><strong>----- stellina ------</strong></p>
+              <p><strong>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
   <main>
-    <section></section>
-    <section></section>
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <h1><strong>PORTFOLIO</strong></h1>
+          <p><strong>------ stellina ------</strong></p>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/cabin.png" alt="cabin"></div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/cake.png" alt="cake"></div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/circus.png" alt="circus"></div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/game.png" alt="game"></div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/safe.png" alt="safe"></div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/submarine.png" alt="submarine"></div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container-lg text-center">
+        <div class="row">
+          <h1><strong>ABOUT</strong></h1>
+          <p><strong>------ stellina ------</strong></p>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-4">
+            <p>Freelancer is a free bootstrap theme created by Smart Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customazation.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-4">
+            <p>Whether you're a student looking to showcase your work, a professional looking to share your projects, this template is the perfect starting point!</p>
+          </div>
+          <div class="row">
+            <button class="download">Download</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h1 class="text-center">CONTACT ME</h1>
+        <p class="text-center"><strong>------ stellina ------</strong></p>
+        <div class="col"><p>Name</p></div>
+        <div class="col"><p>Email Address</p></div>
+        <div class="col"><p>Phone Number</p></div>
+        <div class="col"><p>Message</p> <textarea></textarea></div>
+        <button>Send</button>
+      </div>
+    </section>
+    <section class="location">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <p>LOCATION</p>
+            <p>2215 John Daniel Drive Clark, MO 54243</p>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <p>AROUND THE WEB</p>
+            <div class="d-flex text-center mx-5">
+              <a class="m-auto" href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a> 
+              <a class="m-auto" href="#"><i class="fa-brands fa-google-plus" style="color: #ffffff;"></i></a> 
+              <a class="m-auto" href="#"><i class="fa-brands fa-square-twitter" style="color: #ffffff;"></i></a> 
+              <a class="m-auto" href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <p>ABOUT FREELANCER</p>
+            <p>Freelance is a free to use, open source Bootstrap Theme created by <a href="#">Start Bootstrap</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
+    <div class="col-12">
+      <p>Copyright c Your Website 2019</p>
+    </div>
   </footer>
 </body>
 </html>
