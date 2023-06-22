@@ -10,40 +10,31 @@
 </head>
 <body>
   <header>
+
+    <!--Navbar (presa da Bootstrap)-->
     <nav class="navbar navbar-expand-md">
-      <div class="container-md">
-        <a class="navbar-brand" href="#"><strong>START BOOTSTRAP</strong></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#"><strong>PORTFOLIO</strong></a>
-            <a class="nav-link" href="#"><strong>ABOUT</strong></a>
-            <a class="nav-link" href="#"><strong>CONTACT</strong></a>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav d-md-flex">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Navbar fatta a mano -->
-    <!-- <nav>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6">
-            <a class="logo" href="#"><strong>START BOOTSTRAP</strong></a>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li><strong>PORTFOLIO</strong></li>
-              <li><strong>ABOUT</strong></li>
-              <li><strong>CONTACT</strong></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav> -->
-
+    <!--Hero Section-->
     <section class="hero">
       <div class="container text-center hero-center">
         <div class="row">
@@ -51,20 +42,31 @@
             <div class="jumbo">
               <img src="img/avatar.svg" alt="jumbo-image">
               <h1><strong>START BOOTSTRAP</strong></h1>
-              <p><strong>----- stellina ------</strong></p>
-              <p><strong>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</strong></p>
+              <div class="d-flex justify-content-center col-12 mb-4">
+                <div class="center-line white"></div>
+                <div><i class="fa-solid fa-star" style="color: #ffffff;"></i></div>
+                <div class="center-line white"></div>
+              </div>  
             </div>
+            <div class="col-12 text-white"><p><strong>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</strong></p></div>
           </div>
         </div>
       </div>
     </section>
   </header>
+
+  <!--Main-->
   <main>
+    <!--Section Portfolio-->
     <section>
       <div class="container text-center">
         <div class="row">
           <h1><strong>PORTFOLIO</strong></h1>
-          <p><strong>------ stellina ------</strong></p>
+          <div class="d-flex justify-content-center col-12 mb-4">
+            <div class="center-line black"></div>
+            <div><i class="fa-solid fa-star" style="color: #000000;"></i></div>
+            <div class="center-line black"></div>
+          </div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/cabin.png" alt="cabin"></div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/cake.png" alt="cake"></div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 image g-4"><img src="img/circus.png" alt="circus"></div>
@@ -74,11 +76,16 @@
         </div>
       </div>
     </section>
+    <!--Section About-->
     <section class="about">
       <div class="container-lg text-center">
         <div class="row">
           <h1><strong>ABOUT</strong></h1>
-          <p><strong>------ stellina ------</strong></p>
+          <div class="d-flex justify-content-center col-12 mb-4">
+            <div class="center-line white"></div>
+            <div><i class="fa-solid fa-star" style="color: #ffffff;"></i></div>
+            <div class="center-line white"></div>
+          </div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-4">
             <p>Freelancer is a free bootstrap theme created by Smart Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customazation.</p>
           </div>
@@ -86,49 +93,74 @@
             <p>Whether you're a student looking to showcase your work, a professional looking to share your projects, this template is the perfect starting point!</p>
           </div>
           <div class="row">
-            <button class="download">Download</button>
+            <button type="button" class="btn btn-outline-light download"><i class="fa-solid fa-download" style="color: currentColor;"></i> Download</button>
           </div>
         </div>
       </div>
     </section>
+    <!--Section Contact me-->
     <section>
       <div class="container">
         <h1 class="text-center">CONTACT ME</h1>
-        <p class="text-center"><strong>------ stellina ------</strong></p>
-        <div class="col"><p>Name</p></div>
-        <div class="col"><p>Email Address</p></div>
-        <div class="col"><p>Phone Number</p></div>
-        <div class="col"><p>Message</p> <textarea></textarea></div>
-        <button>Send</button>
+        <div class="d-flex justify-content-center col-12 mb-4">
+          <div class="center-line black"></div>
+          <div><i class="fa-solid fa-star" style="color: #000000;"></i></div>
+          <div class="center-line black"></div>
+        </div>
+        <form action="">
+          <div class="form-floating">
+            <input type="text" class="form-control my-form-control" id="floatingInput" placeholder="Name">
+            <label for="floatingInput">Name</label>
+          </div>
+
+          <div class="form-floating">
+            <input type="email" class="form-control my-form-control" id="floatingInput" placeholder="Email">
+            <label for="floatingInput">Email address</label>
+          </div>
+
+          <div class="form-floating">
+            <input type="password" class="form-control my-form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control my-form-control" placeholder="Message" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Message</label>
+          </div>
+        </form>
+        <button type="button" class="btn btn-primary my-4">Send</button>
       </div>
     </section>
+    <!--Section Location & Social-->
     <section class="location">
       <div class="container text-center">
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 my-5">
             <p>LOCATION</p>
             <p>2215 John Daniel Drive Clark, MO 54243</p>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 my-5">
           <p>AROUND THE WEB</p>
-            <div class="d-flex text-center mx-5">
+            <div class="d-flex text-center mx-5 fs-3">
               <a class="m-auto" href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a> 
               <a class="m-auto" href="#"><i class="fa-brands fa-google-plus" style="color: #ffffff;"></i></a> 
               <a class="m-auto" href="#"><i class="fa-brands fa-square-twitter" style="color: #ffffff;"></i></a> 
               <a class="m-auto" href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 my-5">
             <p>ABOUT FREELANCER</p>
-            <p>Freelance is a free to use, open source Bootstrap Theme created by <a href="#">Start Bootstrap</a></p>
+            <p>Freelance is a free to use, open source Bootstrap Theme created by <a class="link" href="#">Start Bootstrap</a></p>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!--Footer-->
   <footer>
     <div class="col-12">
-      <p>Copyright c Your Website 2019</p>
+      <p>Copyright &#169; Your Website 2019</p>
     </div>
   </footer>
 </body>
